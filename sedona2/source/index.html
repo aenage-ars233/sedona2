@@ -8,13 +8,16 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="" alt="Логотип Седоны">
-      </a>
-      <button class="page-header__menu-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <nav class="page-header__navigation">
+        <a class="page-header__logo">
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1280px)" srcset="img/header-logo@desktop.svg" width="186.6" height="96.43">
+            <img src="img/header-logo.svg" alt="Логотип Седоны" width="101" height="84">
+          </picture>
+        </a>
+        <button class="page-header__menu-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="page-header__menu">
           <li class="page-header__menu-item">
             <a class="page-header__menu-link page-header__menu-link--active">Главная</a>
@@ -34,7 +37,7 @@
     <main class="page__main">
       <article class="page__section promo">
         <h1 class="visually-hidden">Туристический город Седона</h1>
-        <img class="promo__logo" src="" alt="Добро пожаловать в Седону!">
+        <img class="promo__logo" src="img/promo-text.svg" alt="Добро пожаловать в Седону!" width="282" height="214">
       </article>
       <section class="page__section advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -135,5 +138,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
