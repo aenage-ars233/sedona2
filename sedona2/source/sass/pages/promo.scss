@@ -1,0 +1,29 @@
+.promo {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-color: lightblue;
+  background-image: url("../img/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 320px 389px;
+
+  @media (min-width: $tablet) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
+}
+
+.promo__logo {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 461px;
+    height: 350px;
+  }
+}

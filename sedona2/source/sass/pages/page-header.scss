@@ -22,7 +22,7 @@
   margin-left: -50.5px;
 
   @media (min-width: $tablet) {
-    margin-left: -60px;
+
   }
 
   @media (min-width: $desktop) {
@@ -105,7 +105,7 @@
     position: static;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: transparent;
   }
 
@@ -122,6 +122,33 @@
   @media (min-width: $tablet) {
     border: none;
     color: $basic_black;
+
+    &:first-child {
+      margin-right: 47px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 179px;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+      margin-right: 19px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:first-child {
+      margin-right: 132px;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      margin-left: 107px;
+    }
   }
 }
 
