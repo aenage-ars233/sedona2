@@ -1,11 +1,8 @@
 .promo {
   padding-top: 90px;
   padding-bottom: 85px;
+  background: url("../img/promo-triangle.svg") no-repeat center 100%/320px 57px, url("../img/promo-background.jpg") no-repeat center 0/320px 389px;
   background-color: lightblue;
-  background-image: url("../img/promo-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 320px 389px;
 
   @media (min-width: $tablet) {
     padding-top: 77px;
