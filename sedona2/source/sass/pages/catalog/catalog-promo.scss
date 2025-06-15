@@ -1,0 +1,24 @@
+.catalog-promo {
+  padding: 52px 20px 67px 20px;
+  background: url("../img/promo-triangle.svg") no-repeat center 101%/320px 57px, url("../img/catalog/catalog-promo-bg.jpg") no-repeat center -57px/320px 214px;
+  background-color: lightblue;
+
+  @media (min-width: $tablet) {
+    padding: 95px 20px 117px 20px;
+  }
+}
+
+.catalog-promo__logo {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 456px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 459px;
+    height: 79px;
+  }
+}
