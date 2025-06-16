@@ -43,45 +43,69 @@
         <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/photo-1.jpg" alt="" width="280" height="280">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-1@3x.jpg" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-1@2x.jpg" width="648" height="400">
+              <img class="card__image" src="img/catalog/photo-1.jpg" alt="" width="280" height="280">
+            </picture>
             <div class="card__content">
               <h2 class="card__title">Неродные просторы</h2>
               <p class="card__author">Автор фото: Борис</p>
               <p class="card__likes">
-                <img class="card__like-image" src="img/catalog/like-icon.svg" alt="Лайков:" width="23" height="21">
+                <svg class="card__like-image" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
                 <span class="card__likes-counter">1350</span>
               </p>
             </div>
           </li>
           <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/photo-2.jpg" alt="" width="280" height="280">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-2@3x.jpg" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-2@2x.jpg" width="324" height="267">
+              <img class="card__image" src="img/catalog/photo-2.jpg" alt="" width="280" height="280">
+            </picture>
             <div class="card__content">
               <h2 class="card__title">Местная растительность</h2>
               <p class="card__author">Автор фото: Сергей</p>
               <p class="card__likes">
-                <img class="card__like-image" src="img/catalog/like-icon.svg" alt="Лайков:" width="23" height="21">
+                <svg class="card__like-image" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
                 <span class="card__likes-counter">143</span>
               </p>
             </div>
           </li>
           <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/photo-3.jpg" alt="" width="280" height="280">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3@3x.jpg" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-3@2x.jpg" width="324" height="267">
+              <img class="card__image" src="img/catalog/photo-3.jpg" alt="" width="280" height="280">
+            </picture>
             <div class="card__content">
               <h2 class="card__title">Дорога на север</h2>
               <p class="card__author">Автор фото: Петр</p>
               <p class="card__likes">
-                <img class="card__like-image" src="img/catalog/like-icon.svg" alt="Лайков:" width="23" height="21">
+                <svg class="card__like-image" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
                 <span class="card__likes-counter">96</span>
               </p>
             </div>
           </li>
           <li class="catalog__item card">
-            <img class="card__image" src="img/catalog/photo-4.jpg" alt="" width="280" height="280">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-4@3x.jpg" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-4@2x.jpg" width="324" height="267">
+              <img class="card__image" src="img/catalog/photo-4.jpg" alt="" width="280" height="280">
+            </picture>
             <div class="card__content">
               <h2 class="card__title">Мост дьявола</h2>
               <p class="card__author">Автор фото: Антон</p>
               <p class="card__likes">
-                <img class="card__like-image" src="img/catalog/like-icon.svg" alt="Лайков:" width="23" height="21">
+                <svg class="card__like-image" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
                 <span class="card__likes-counter">254</span>
               </p>
             </div>

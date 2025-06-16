@@ -1,0 +1,109 @@
+.card {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+
+    &:first-child {
+      grid-column: 1/-1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.card__content {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 100%;
+    padding: 22px 20px 15px 20px;
+    background-color: $special_gray;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 21px;
+    background-color: rgba($basic_black, 0.3);
+    color: $basic_white;
+  }
+}
+
+.card__title {
+  margin: 0;
+  color: $basic_black;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    max-width: 209px;
+  }
+
+  @media (min-width: $desktop) {
+    color: $basic_white;
+  }
+}
+
+.card__author {
+  margin: 0;
+  text-transform: none;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    max-width: 209px;
+    margin-bottom: 0;
+  }
+}
+
+.card__likes {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: $basic_black;
+  font-weight: 700;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 28px;
+    right: 25px;
+  }
+}
+
+.card__like-image {
+  margin-right: 14px;
+
+  @media (min-width: $desktop) {
+    margin-right: 10px;
+  }
+
+  path {
+    @media (min-width: $desktop) {
+      fill: $basic_white;
+      opacity: 1;
+    }
+  }
+}
+
+.card__likes-counter {
+  margin-top: 5px;
+
+  @media (min-width: $desktop) {
+    color: $basic_white;
+  }
+}
