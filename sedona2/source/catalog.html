@@ -116,7 +116,11 @@
         <h2 class="catalog-video__title">Все еще сомневаетесь?</h2>
         <p class="catalog-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="catalog-video__video">
-          <img class="catalog-video__preview" src="img/catalog/video-preview.jpg" alt="Видеопрезентация" width="320" height="201">
+          <picture class="catalog-video__preview">
+            <source media="(min-width: 1200px)" srcset="img/catalog/video-preview@3x.jpg" width="800" height="500">
+            <source media="(min-width: 768px)" srcset="img/catalog/video-preview@2x.jpg" width="648" height="500">
+            <img class="catalog-video__preview" src="img/catalog/video-preview.jpg" alt="Видеопрезентация" width="320" height="201">
+          </picture>
           <div class="catalog-video__controls">
             <button class="catalog-video__replay" type="button">
               <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
