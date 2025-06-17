@@ -1,0 +1,148 @@
+.form {
+  padding-top: 36px;
+  padding-bottom: 48px;
+
+  @media (min-width: $tablet) {
+    padding-top: 64px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 114px;
+    padding-bottom: 66px;
+  }
+}
+
+.form__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: $basic_black;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: 434px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+  }
+}
+
+.form__description {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 434px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.form__form {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 648px;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+}
+
+.form__fieldgroup {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet) {
+    border-bottom: none;
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+
+
+
+.form__controls {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+  }
+}
+
+.form__submit {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 13px;
+  background-color: $basic_blue;
+  color: $basic_white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba($basic_white, 0.3);
+  }
+
+  &:disabled, &:disabled:hover, &:disabled:active {
+    background-color: #e5e5e5;
+    color: $basic_white;
+  }
+}
+
+.form__placeholder {
+  display: none;
+
+  @media (min-width: $tablet) {
+   display: block;
+   font-size: 14px;
+   line-height: 26px;
+  }
+}

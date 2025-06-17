@@ -1,0 +1,102 @@
+.impression {
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    order: -1;
+    margin: 0;
+    margin-bottom: 72.5px;
+    padding: 0;
+    border-top: none;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.impression__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  color: $basic_black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-left: -25px;
+    margin-bottom: 60px;
+    font-size: 21px;
+  }
+}
+
+.impression__label {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:hover .impression__radio-visually {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    .impression__radio-visually {
+      background-color: #d5d5d5;
+    }
+
+    .impression__radio-visually::before {
+      background-color: rgba($primary, 0.3);
+    }
+  }
+}
+
+.impression__label input:checked + .impression__radio-visually::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: $primary;
+  border-radius: 50%;
+}
+
+.impression__radio-visually {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 26px;
+  background-color: $special_gray;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    margin-right: 23px;
+  }
+}
+
+.impression__radio-text {
+  color: $basic_black;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

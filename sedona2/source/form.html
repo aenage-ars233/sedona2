@@ -41,7 +41,7 @@
       <section class="page__section form">
         <h1 class="form__title">Оставьте свой отзыв</h1>
         <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="form__form" method="post" action="">
+        <form class="form__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldgroup contact-name">
             <legend class="contact-name__title">Представьтесь:</legend>
             <label class="contact-name__label">
@@ -61,27 +61,27 @@
             <legend class="contact-data__title">Контактная информация:</legend>
             <label class="contact-data__label">
               <span class="contact-data__label-text">Контактный телефон*:</span>
-              <input class="contact-data__field" type="tel" name="phone" placeholder="Введите телефон" required>
+              <input class="contact-data__field phone" type="tel" name="phone" placeholder="Введите телефон" required>
             </label>
             <label class="contact-data__label">
               <span class="contact-data__label-text">Электронная почта*:</span>
-              <input class="contact-data__field" type="email" name="email" placeholder="Введите e-mail" required>
+              <input class="contact-data__field email" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
           <fieldset class="form__fieldgroup impression">
             <legend class="impression__title">Ваше общее впечатление</legend>
             <label class="impression__label">
-              <input class="" type="radio" name="impression" value="good" checked>
+              <input class="visually-hidden" type="radio" name="impression" value="good" checked>
               <span class="impression__radio-visually"></span>
               <span class="impression__radio-text">Скорее положительное</span>
             </label>
             <label class="impression__label">
-              <input class="" type="radio" name="impression" value="bad">
+              <input class="visually-hidden" type="radio" name="impression" value="bad">
               <span class="impression__radio-visually"></span>
               <span class="impression__radio-text">Скорее отрицательное</span>
             </label>
             <label class="impression__label">
-              <input class="" type="radio" name="impression" value="don't know">
+              <input class="visually-hidden" type="radio" name="impression" value="don't know">
               <span class="impression__radio-visually"></span>
               <span class="impression__radio-text">Затрудняюсь ответить</span>
             </label>
@@ -89,23 +89,39 @@
           <fieldset class="form__fieldgroup places">
             <legend class="places__title">Посещенные достопримечательности</legend>
             <label class="places__label">
-              <input class="" type="checkbox" name="place" value="devil's bridge" checked>
-              <span class="places__checkbox-visually"></span>
+              <input class="visually-hidden" type="checkbox" name="place" value="devil's bridge" checked>
+              <span class="places__checkbox-visually">
+                <svg class="places__checkbox-visually-icon" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z" fill="black"/>
+                </svg>
+              </span>
               <span class="places__checkbox-text">Мост Дьявола</span>
             </label>
             <label class="places__label">
-              <input class="" type="checkbox" name="place" value="mountain bell" checked>
-              <span class="places__checkbox-visually"></span>
+              <input class="visually-hidden" type="checkbox" name="place" value="mountain bell" checked>
+              <span class="places__checkbox-visually">
+                <svg class="places__checkbox-visually-icon" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z" fill="black"/>
+                </svg>
+              </span>
               <span class="places__checkbox-text">Гора-Колокол</span>
             </label>
             <label class="places__label">
-              <input class="" type="checkbox" name="place" value="park slaid" checked>
-              <span class="places__checkbox-visually"></span>
+              <input class="visually-hidden" type="checkbox" name="place" value="park slaid" checked>
+              <span class="places__checkbox-visually">
+                <svg class="places__checkbox-visually-icon" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z" fill="black"/>
+                </svg>
+              </span>
               <span class="places__checkbox-text">Слайд-парк</span>
             </label>
             <label class="places__label">
-              <input class="" type="checkbox" name="place" value="red rocks">
-              <span class="places__checkbox-visually"></span>
+              <input class="visually-hidden" type="checkbox" name="place" value="red rocks">
+              <span class="places__checkbox-visually">
+                <svg class="places__checkbox-visually-icon" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z" fill="black"/>
+                </svg>
+              </span>
               <span class="places__checkbox-text">Красные скалы</span>
             </label>
           </fieldset>

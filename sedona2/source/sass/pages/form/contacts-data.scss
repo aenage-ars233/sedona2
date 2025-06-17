@@ -1,0 +1,117 @@
+.contact-data {
+  margin-bottom: 20px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/-1;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    padding: 0;
+  }
+}
+
+.contact-data__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  color: $basic_black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: 389px;
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.contact-data__label {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    width: 450px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contact-data__label-text {
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    margin: 0;
+    margin-right: 16px;
+  }
+}
+
+.contact-data__field {
+  width: 100%;
+  border: none;
+  padding: 18px 72px 14px 22px;
+  background-color: $special_gray;
+  color: $basic_black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $desktop) {
+    width: 315px;
+  }
+
+  &::placeholder {
+    color: $basic_black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
+}
+
+.phone {
+  background: $special_gray url("../img/form/phone.png") no-repeat 100% 0/58px 58px;
+}
+
+.email {
+  background: $special_gray url("../img/form/email.png") no-repeat 100% 0/58px 58px;
+}

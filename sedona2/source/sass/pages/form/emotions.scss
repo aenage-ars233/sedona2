@@ -1,0 +1,58 @@
+.emotions {
+  margin-bottom: 51px;
+  border-bottom: none;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/-1;
+    margin-bottom: 58px;
+  }
+}
+
+.emotions__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: $basic_black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: 328px;
+    margin-bottom: 54px;
+    font-size: 21px;
+  }
+}
+
+.emotions__field {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  border: none;
+  padding: 13px 23px 29px 21px;
+  background-color: $special_gray;
+  resize: none;
+  color: $basic_black;
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    padding: 18px 21px 24px 21px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: $basic_black;
+    font: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
