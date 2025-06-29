@@ -4,6 +4,10 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import csso from 'gulp-csso';
+import terser from 'gulp-terser';
+import webp from 'gulp-webp';
 
 // Styles
 
@@ -14,16 +18,73 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(csso())
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+//HTML
+
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
+}
+
+//Script
+
+export const script = () => {
+  return gulp.src('source/js/menu.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
+
+//Images
+
+export const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg, png, svg}')
+    .pipe(gulp.dest('build/img'))
+}
+
+//Copy
+
+export const copy = () => {
+  return gulp.src([
+    'source/fonts/*.{woff2, woff}',
+    'source/favicon.ico'
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'));
+}
+
+//Webp
+
+export const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest('build/img'));
+}
+
+//Build
+
+export const build = gulp.series(
+  copy,
+  copyImages,
+  createWebp,
+  gulp.parallel(
+    html,
+    styles,
+    script
+  ),
+);
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,5 +102,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  copy, html, styles, script, copyImages, createWebp, server, watcher
 );
