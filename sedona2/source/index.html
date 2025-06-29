@@ -3,27 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device.width, initial-scale=1">
+    <meta name="title" content="Седона">
+    <meta name="description" content="СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
     <title>Седона</title>
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <nav class="page-header__navigation">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="#">
           <picture class="page-header__logo-image">
             <source media="(min-width: 1280px)" srcset="img/header-logo@desktop.svg" width="186.6" height="96.43">
             <img src="img/header-logo.svg" alt="Логотип Седоны" width="101" height="84">
           </picture>
+          <span class="visually-hidden">Логотип Седоны</span>
         </a>
         <button class="page-header__menu-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="page-header__menu">
           <li class="page-header__menu-item">
-            <a class="page-header__menu-link page-header__menu-link--active">Главная</a>
+            <a class="page-header__menu-link page-header__menu-link--active" href="#">Главная</a>
           </li>
           <li class="page-header__menu-item">
             <a class="page-header__menu-link" href="catalog.html">Фото и видео</a>
@@ -38,8 +43,8 @@
       </nav>
     </header>
     <main class="page__main">
+      <h1 class="visually-hidden">Туристический город Седона</h1>
       <article class="page__section promo">
-        <h1 class="visually-hidden">Туристический город Седона</h1>
         <img class="promo__logo" src="img/promo-text.svg" alt="Добро пожаловать в Седону!" width="282" height="214">
       </article>
       <section class="page__section advantages">
