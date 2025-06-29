@@ -5,6 +5,15 @@
 
   @media (min-width: $tablet) {
     padding: 95px 20px 117px 20px;
+    background: url("../img/promo-triangle-tablet.svg") no-repeat center 102%/660px 57px,
+                url("../img/catalog/catalog-promo-bg-tablet.jpg") no-repeat center 0/660px 518px;
+    background-color: lightblue;
+  }
+
+  @media (min-width: $desktop) {
+    background: url("../img/promo-triangle-desktop.svg") no-repeat center 100%/1200px 57px,
+                url("../img/catalog/catalog-promo-bg-desktop.jpg") no-repeat center 0/1200px 518px;
+    background-color: lightblue;
   }
 }
 
