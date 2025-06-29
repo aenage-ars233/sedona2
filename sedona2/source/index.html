@@ -51,9 +51,12 @@
               <p class="large-item__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <picture class="large-item__image">
-              <source media="(min-width: 1200px)" srcset="img/city@3x.jpg" width="800" height="256">
-              <source media="(min-width: 768px)" srcset="img/city@2x.jpg" width="512" height="256">
-              <img class="large-item__image" src="img/city.jpg" alt="" width="320" height="260">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/city-desktop.webp 1x, img/city-desktop@2x.webp 2x" width="800" height="256">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x" width="512" height="256">
+              <source media="(max-width: 768px)" type="image/webp" srcset="img/city-mobile.webp 1x, img/city-mobile@2x.webp 2x" width="320" height="260">
+              <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="large-item__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x" alt="" width="320" height="260">
             </picture>
             <ul class="large-item__list">
               <li class="large-item__list-item">
@@ -80,9 +83,12 @@
               <p class="big-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture class="big-item__image">
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge@3x.jpg" width="800" height="256">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge@2x.jpg">
-              <img class="big-item__image" src="img/photo-bridge.jpg" alt="" width="320" height="260">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x" width="800" height="256">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x" width="512" height="256">
+              <source media="(max-width: 768px)" type="image/webp" srcset="img/bridge-mobile.webp 1x, img/bridge-mobile@2x.webp 2x" width="320" height="260">
+              <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="big-item__image" loading="lazy" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="" width="320" height="260">
             </picture>
           </li>
           <li class="advantages__item small-item">
@@ -106,7 +112,7 @@
         <h2 class="interesting__title">Заинтересовались?</h2>
         <p class="interesting__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="interesting__link" href="#">Найти гостиницу</a>
-        <iframe class="interesting__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afebcb511822d6c878bde27809eed4f0a169f612ee40731a2f358351e911e1b71&amp;source=constructor" width="320" height="350" frameborder="0"></iframe>
+        <iframe class="interesting__map" loading="lazy" aria-label="Карта к городку Седона." src="https://yandex.ru/map-widget/v1/?um=constructor%3Afebcb511822d6c878bde27809eed4f0a169f612ee40731a2f358351e911e1b71&amp;source=constructor" width="320" height="350" frameborder="0"></iframe>
       </section>
     </main>
     <footer class="page__footer page-footer">

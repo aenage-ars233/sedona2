@@ -1,17 +1,23 @@
 .promo {
   padding-top: 90px;
   padding-bottom: 85px;
-  background: url("../img/promo-triangle.svg") no-repeat center 100%/320px 57px, url("../img/promo-background.jpg") no-repeat center 0/320px 389px;
+  background: url("../img/promo-triangle.svg") no-repeat center 100%/320px 57px, image-set(url("../img/bg-promo-mobile.jpg") 1x, url("../img/bg-promo-mobile@2x.jpg") 2x) no-repeat center 0/320px 389px;
   background-color: lightblue;
 
   @media (min-width: $tablet) {
     padding-top: 77px;
     padding-bottom: 91px;
+    background: url("../img/promo-triangle-tablet.svg") no-repeat center 101%/660px 57px,
+                image-set(url("../img/bg-promo-tablet.jpg") 1x, url("../img/bg-promo-tablet@2x.jpg") 2x) no-repeat center 0/660px 518px;
+    background-color: lightblue;
   }
 
   @media (min-width: $desktop) {
     padding-top: 78px;
     padding-bottom: 90px;
+    background: url("../img/promo-triangle-desktop.svg") no-repeat center 100%/1200px 57px,
+                image-set(url("../img/bg-promo-desktop.jpg") 1x, url("../img/bg-promo-desktop@2x.jpg") 2x) no-repeat center 0/1200px 518px;
+    background-color: lightblue;
   }
 }
 
